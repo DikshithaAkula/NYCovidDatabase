@@ -9,4 +9,4 @@ NY state Covid Test Data ETL
 
 -> This python job utilizes a multi-threaded approach to perform the ETL operation and loads the county tables concurrently.
 
-# Source data url - https://health.data.ny.gov/api/views/xdss-u53e/rows.json?accessType=DOWNLOAD
+Source data url - https://health.data.ny.gov/api/views/xdss-u53e/rows.json?accessType=DOWNLOAD
