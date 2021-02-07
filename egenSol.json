@@ -1,0 +1,754 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "xdss-u53e",
+      "name" : "New York State Statewide COVID-19 Testing",
+      "assetType" : "dataset",
+      "attribution" : "New York State Department of Health",
+      "averageRating" : 0,
+      "category" : "Health",
+      "createdAt" : 1585501076,
+      "description" : "This dataset includes information on the number of tests of individuals for COVID-19 infection performed in New York State beginning March 1, 2020, when the first case of COVID-19 was identified in the state. The primary goal of publishing this dataset is to provide users timely information about local disease spread and reporting of positive cases. The data will be updated daily, reflecting tests completed by 12:00 am (midnight) the day of the update (i.e., all tests reported by the end of the day on the day before the update).\n<p>\n<b>Note</b>: On November 14, 2020, only 14 hours of laboratory data was collected and shared. A 2:00 pm cutoff time was implemented, allowing the NYSDOH to enhance data quality reviews. All other published laboratory data represented 24 hours of data collection.\n</p><p>\nReporting of SARS-CoV2 laboratory testing results is mandated under Part 2 of the New York State Sanitary Code. Clinical laboratories, as defined in Public Health Law (PHL) § 571 electronically report test results to the New York State Department of Health (DOH) via the Electronic Clinical Laboratory Reporting System (ECLRS). The DOH Division of Epidemiology’s Bureau of Surveillance and Data System (BSDS) monitors ECLRS reporting and ensures that all positives and negatives are accurate. Starting September 30, 2020, this data also includes pooled/batch tests reported by institutions of higher education. This is also known as surveillance testing and not performed by a clinical laboratory. \n</p><p>\nTest counts reflect those reported to DOH each day. A person may have multiple specimens tested on one day, these would be counted one time, i.e., if two specimens are collected from an individual at the same time and then evaluated, the outcome of the evaluation of those two samples to diagnose the individual is counted as a single test of one person, even though the specimens may be tested separately. Conversely, if an individual is tested on more than one day, the data will show two tests of an individual, one for each date the person was tested. An individual will only be counted positive one time. \n</p><p>\nTest counts are assigned to a county based on this order of preference: 1) the patient’s address, 2) the ordering healthcare provider/campus address, or 3) the ordering facility/campus address.\n</p>",
+      "displayType" : "table",
+      "downloadCount" : 970213,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "newBackend" : true,
+      "numberOfComments" : 0,
+      "oid" : 33763034,
+      "provenance" : "official",
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1585917356,
+      "publicationGroup" : 16973363,
+      "publicationStage" : "published",
+      "rowClass" : "",
+      "rowsUpdatedAt" : 1612209305,
+      "rowsUpdatedBy" : "a9xd-f5um",
+      "tableId" : 16973363,
+      "totalTimesRated" : 0,
+      "viewCount" : 282362,
+      "viewLastModified" : 1612209302,
+      "viewType" : "tabular",
+      "approvals" : [ {
+        "reviewedAt" : 1585935493,
+        "reviewedAutomatically" : true,
+        "state" : "approved",
+        "submissionId" : 2040290,
+        "submissionObject" : "public_audience_request",
+        "submissionOutcome" : "change_audience",
+        "submittedAt" : 1585935493,
+        "workflowId" : 1966,
+        "submissionDetails" : {
+          "permissionType" : "READ"
+        },
+        "submissionOutcomeApplication" : {
+          "endedAt" : 1585935494,
+          "failureCount" : 0,
+          "startedAt" : 1585935493,
+          "status" : "success"
+        },
+        "submitter" : {
+          "id" : "a9xd-f5um",
+          "displayName" : "R. Staniek"
+        }
+      } ],
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 458990387,
+        "name" : "Test Date",
+        "dataTypeName" : "calendar_date",
+        "description" : "The date the test result was processed by the NYS Electronic Clinical Laboratory Reporting System (ECLRS).",
+        "fieldName" : "test_date",
+        "position" : 1,
+        "renderTypeName" : "calendar_date",
+        "tableColumnId" : 97318420,
+        "cachedContents" : {
+          "non_null" : "20894",
+          "largest" : "2021-01-31T00:00:00.000",
+          "null" : "0",
+          "top" : [ {
+            "item" : "2020-07-09T00:00:00.000",
+            "count" : "62"
+          }, {
+            "item" : "2020-07-10T00:00:00.000",
+            "count" : "62"
+          }, {
+            "item" : "2020-12-25T00:00:00.000",
+            "count" : "62"
+          }, {
+            "item" : "2020-08-11T00:00:00.000",
+            "count" : "62"
+          }, {
+            "item" : "2020-04-19T00:00:00.000",
+            "count" : "62"
+          }, {
+            "item" : "2020-11-11T00:00:00.000",
+            "count" : "62"
+          }, {
+            "item" : "2020-05-20T00:00:00.000",
+            "count" : "62"
+          }, {
+            "item" : "2020-06-20T00:00:00.000",
+            "count" : "62"
+          }, {
+            "item" : "2020-07-30T00:00:00.000",
+            "count" : "62"
+          }, {
+            "item" : "2020-11-08T00:00:00.000",
+            "count" : "62"
+          }, {
+            "item" : "2020-07-13T00:00:00.000",
+            "count" : "62"
+          }, {
+            "item" : "2021-01-28T00:00:00.000",
+            "count" : "62"
+          }, {
+            "item" : "2020-05-30T00:00:00.000",
+            "count" : "62"
+          }, {
+            "item" : "2020-03-05T00:00:00.000",
+            "count" : "62"
+          }, {
+            "item" : "2020-06-18T00:00:00.000",
+            "count" : "62"
+          }, {
+            "item" : "2020-06-23T00:00:00.000",
+            "count" : "62"
+          }, {
+            "item" : "2020-03-18T00:00:00.000",
+            "count" : "62"
+          }, {
+            "item" : "2020-04-25T00:00:00.000",
+            "count" : "62"
+          }, {
+            "item" : "2021-01-02T00:00:00.000",
+            "count" : "62"
+          }, {
+            "item" : "2020-03-16T00:00:00.000",
+            "count" : "62"
+          } ],
+          "smallest" : "2020-03-01T00:00:00.000",
+          "cardinality" : "337"
+        },
+        "format" : {
+          "view" : "date"
+        }
+      }, {
+        "id" : 458990388,
+        "name" : "County",
+        "dataTypeName" : "text",
+        "description" : "The county of residence for the person tested.",
+        "fieldName" : "county",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 97318421,
+        "cachedContents" : {
+          "non_null" : "20894",
+          "largest" : "Yates",
+          "null" : "0",
+          "top" : [ {
+            "item" : "Monroe",
+            "count" : "337"
+          }, {
+            "item" : "Broome",
+            "count" : "337"
+          }, {
+            "item" : "Steuben",
+            "count" : "337"
+          }, {
+            "item" : "Columbia",
+            "count" : "337"
+          }, {
+            "item" : "New York",
+            "count" : "337"
+          }, {
+            "item" : "Cortland",
+            "count" : "337"
+          }, {
+            "item" : "Erie",
+            "count" : "337"
+          }, {
+            "item" : "Franklin",
+            "count" : "337"
+          }, {
+            "item" : "Herkimer",
+            "count" : "337"
+          }, {
+            "item" : "Niagara",
+            "count" : "337"
+          }, {
+            "item" : "Cattaraugus",
+            "count" : "337"
+          }, {
+            "item" : "Sullivan",
+            "count" : "337"
+          }, {
+            "item" : "Saratoga",
+            "count" : "337"
+          }, {
+            "item" : "Fulton",
+            "count" : "337"
+          }, {
+            "item" : "Cayuga",
+            "count" : "337"
+          }, {
+            "item" : "Bronx",
+            "count" : "337"
+          }, {
+            "item" : "Livingston",
+            "count" : "337"
+          }, {
+            "item" : "Seneca",
+            "count" : "337"
+          }, {
+            "item" : "Washington",
+            "count" : "337"
+          }, {
+            "item" : "Essex",
+            "count" : "337"
+          } ],
+          "smallest" : "Albany",
+          "cardinality" : "62"
+        },
+        "format" : { }
+      }, {
+        "id" : 458990389,
+        "name" : "New Positives",
+        "dataTypeName" : "number",
+        "description" : "The number of new persons tested positive for COVID-19 infection on the test date in each county.",
+        "fieldName" : "new_positives",
+        "position" : 3,
+        "renderTypeName" : "number",
+        "tableColumnId" : 97318422,
+        "cachedContents" : {
+          "non_null" : "20894",
+          "largest" : "2722",
+          "null" : "0",
+          "top" : [ {
+            "item" : "0",
+            "count" : "4873"
+          }, {
+            "item" : "1",
+            "count" : "2308"
+          }, {
+            "item" : "2",
+            "count" : "1363"
+          }, {
+            "item" : "3",
+            "count" : "885"
+          }, {
+            "item" : "4",
+            "count" : "643"
+          }, {
+            "item" : "5",
+            "count" : "483"
+          }, {
+            "item" : "6",
+            "count" : "428"
+          }, {
+            "item" : "7",
+            "count" : "360"
+          }, {
+            "item" : "8",
+            "count" : "314"
+          }, {
+            "item" : "9",
+            "count" : "301"
+          }, {
+            "item" : "11",
+            "count" : "259"
+          }, {
+            "item" : "10",
+            "count" : "257"
+          }, {
+            "item" : "12",
+            "count" : "247"
+          }, {
+            "item" : "14",
+            "count" : "204"
+          }, {
+            "item" : "13",
+            "count" : "202"
+          }, {
+            "item" : "15",
+            "count" : "196"
+          }, {
+            "item" : "17",
+            "count" : "190"
+          }, {
+            "item" : "18",
+            "count" : "168"
+          }, {
+            "item" : "19",
+            "count" : "155"
+          }, {
+            "item" : "16",
+            "count" : "144"
+          } ],
+          "smallest" : "0",
+          "cardinality" : "1032"
+        },
+        "format" : { }
+      }, {
+        "id" : 458990390,
+        "name" : "Cumulative Number of Positives",
+        "dataTypeName" : "number",
+        "description" : "Running total for the number of persons tested positive for COVID-19 infection in each county as of the test date.",
+        "fieldName" : "cumulative_number_of_positives",
+        "position" : 4,
+        "renderTypeName" : "number",
+        "tableColumnId" : 97318423,
+        "cachedContents" : {
+          "non_null" : "20894",
+          "largest" : "176584",
+          "null" : "0",
+          "top" : [ {
+            "item" : "0",
+            "count" : "929"
+          }, {
+            "item" : "1",
+            "count" : "154"
+          }, {
+            "item" : "2",
+            "count" : "127"
+          }, {
+            "item" : "6",
+            "count" : "101"
+          }, {
+            "item" : "7",
+            "count" : "83"
+          }, {
+            "item" : "3",
+            "count" : "82"
+          }, {
+            "item" : "12",
+            "count" : "76"
+          }, {
+            "item" : "20",
+            "count" : "73"
+          }, {
+            "item" : "5",
+            "count" : "73"
+          }, {
+            "item" : "51",
+            "count" : "58"
+          }, {
+            "item" : "49",
+            "count" : "57"
+          }, {
+            "item" : "69",
+            "count" : "57"
+          }, {
+            "item" : "62",
+            "count" : "56"
+          }, {
+            "item" : "39",
+            "count" : "56"
+          }, {
+            "item" : "15",
+            "count" : "55"
+          }, {
+            "item" : "4",
+            "count" : "53"
+          }, {
+            "item" : "8",
+            "count" : "51"
+          }, {
+            "item" : "18",
+            "count" : "49"
+          }, {
+            "item" : "11",
+            "count" : "47"
+          }, {
+            "item" : "16",
+            "count" : "47"
+          } ],
+          "smallest" : "0",
+          "cardinality" : "7385"
+        },
+        "format" : { }
+      }, {
+        "id" : 458990391,
+        "name" : "Total Number of Tests Performed",
+        "dataTypeName" : "number",
+        "description" : "The number of tests of individuals performed on the test date in each county. This total includes positives, negatives, and inconclusive results.",
+        "fieldName" : "total_number_of_tests",
+        "position" : 5,
+        "renderTypeName" : "number",
+        "tableColumnId" : 97318424,
+        "cachedContents" : {
+          "non_null" : "20894",
+          "largest" : "41508",
+          "null" : "0",
+          "top" : [ {
+            "item" : "0",
+            "count" : "673"
+          }, {
+            "item" : "1",
+            "count" : "184"
+          }, {
+            "item" : "2",
+            "count" : "120"
+          }, {
+            "item" : "5",
+            "count" : "105"
+          }, {
+            "item" : "3",
+            "count" : "100"
+          }, {
+            "item" : "10",
+            "count" : "91"
+          }, {
+            "item" : "8",
+            "count" : "89"
+          }, {
+            "item" : "6",
+            "count" : "89"
+          }, {
+            "item" : "7",
+            "count" : "88"
+          }, {
+            "item" : "9",
+            "count" : "85"
+          }, {
+            "item" : "4",
+            "count" : "82"
+          }, {
+            "item" : "12",
+            "count" : "79"
+          }, {
+            "item" : "14",
+            "count" : "69"
+          }, {
+            "item" : "15",
+            "count" : "68"
+          }, {
+            "item" : "13",
+            "count" : "65"
+          }, {
+            "item" : "18",
+            "count" : "64"
+          }, {
+            "item" : "11",
+            "count" : "61"
+          }, {
+            "item" : "16",
+            "count" : "60"
+          }, {
+            "item" : "17",
+            "count" : "54"
+          }, {
+            "item" : "24",
+            "count" : "53"
+          } ],
+          "smallest" : "0",
+          "cardinality" : "4778"
+        },
+        "format" : { }
+      }, {
+        "id" : 458990392,
+        "name" : "Cumulative Number of Tests Performed",
+        "dataTypeName" : "number",
+        "description" : "Running total for the number of tests of individuals performed in each county as of the last update to the dataset. This total includes positives, negatives, and inconclusive results.",
+        "fieldName" : "cumulative_number_of_tests",
+        "position" : 6,
+        "renderTypeName" : "number",
+        "tableColumnId" : 97318425,
+        "cachedContents" : {
+          "non_null" : "20894",
+          "largest" : "3954811",
+          "null" : "0",
+          "top" : [ {
+            "item" : "0",
+            "count" : "501"
+          }, {
+            "item" : "1",
+            "count" : "89"
+          }, {
+            "item" : "2",
+            "count" : "68"
+          }, {
+            "item" : "3",
+            "count" : "49"
+          }, {
+            "item" : "5",
+            "count" : "35"
+          }, {
+            "item" : "4",
+            "count" : "32"
+          }, {
+            "item" : "6",
+            "count" : "23"
+          }, {
+            "item" : "14",
+            "count" : "21"
+          }, {
+            "item" : "11",
+            "count" : "20"
+          }, {
+            "item" : "7",
+            "count" : "19"
+          }, {
+            "item" : "12",
+            "count" : "18"
+          }, {
+            "item" : "9",
+            "count" : "18"
+          }, {
+            "item" : "10",
+            "count" : "17"
+          }, {
+            "item" : "20",
+            "count" : "16"
+          }, {
+            "item" : "17",
+            "count" : "13"
+          }, {
+            "item" : "25",
+            "count" : "12"
+          }, {
+            "item" : "13",
+            "count" : "12"
+          }, {
+            "item" : "18",
+            "count" : "12"
+          }, {
+            "item" : "19",
+            "count" : "11"
+          }, {
+            "item" : "15",
+            "count" : "11"
+          } ],
+          "smallest" : "0",
+          "cardinality" : "17391"
+        },
+        "format" : { }
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "metadata" : {
+        "rdfSubject" : "0",
+        "rdfClass" : "",
+        "attachments" : [ {
+          "filename" : "NYSDOH_COVID19_Data_Dictionary.pdf",
+          "assetId" : "dcac61d8-742e-49c8-87c0-f9e2118a6409",
+          "name" : "NYSDOH_COVID19_Testing_Data_Dictionary.pdf"
+        }, {
+          "filename" : "NYSDOH_COVID19_Overview.pdf",
+          "assetId" : "33dba709-ea17-4af1-9243-b4000e3ed28b",
+          "name" : "NYSDOH_COVID19_Testing_Overview.pdf"
+        } ],
+        "custom_fields" : {
+          "Dataset Summary" : {
+            "Posting Frequency" : "Daily",
+            "Program Owner" : "Bureau of Surveillance and Data Systems, Division of Epidemiology, Center for Community Health",
+            "Time Period" : "Beginning March 1, 2020",
+            "Office/Division" : "Office of Public Health",
+            "Coverage" : "Statewide",
+            "Granularity" : "County",
+            "Units" : "Test results for SARS-CoV2",
+            "Dataset Owner" : "Bureau of Surveillance and Data Systems, Division of Epidemiology, Center for Community Health"
+          },
+          "Additional Resources" : {
+            "See Also " : "https://www.ny.gov/covid-19tracker",
+            "See Also" : "https://coronavirus.health.ny.gov/home"
+          },
+          "Disclaimers" : {
+            "Limitations" : "The SARS-CoV2 laboratory test result data on this site reflects the best information available to DOH at the time the data is posted.  The total number of tests of individuals performed include all positive, negative, and inconclusive results. Despite the relatively small proportion of inconclusive results, it is not appropriate to subtract the number of individuals tested positive from the total number of individuals tested to calculate the total number of individuals tested negative."
+          },
+          "Notes" : {
+            "Notes" : "On November 14, 2020, only 14 hours of laboratory data was collected and shared. A 2:00 pm cutoff time was implemented, allowing the NYSDOH to enhance data quality reviews. All other published laboratory data represented 24 hours of data collection."
+          },
+          "Dataset Information" : {
+            "Agency" : "Health, Department of"
+          }
+        },
+        "filterCondition" : {
+          "metadata" : {
+            "advanced" : true,
+            "unifiedVersion" : 2
+          },
+          "children" : [ {
+            "metadata" : {
+              "tableColumnId" : {
+                "16973363" : 97318420
+              },
+              "operator" : "EQUALS"
+            },
+            "type" : "operator",
+            "value" : "OR"
+          }, {
+            "metadata" : {
+              "tableColumnId" : {
+                "16973363" : 97318421
+              },
+              "operator" : "CONTAINS_INSENSITIVE"
+            },
+            "type" : "operator",
+            "value" : "OR"
+          } ],
+          "type" : "operator",
+          "value" : "AND"
+        },
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        }
+      },
+      "owner" : {
+        "id" : "s9j2-nqmr",
+        "displayName" : "Open Data NY - DOH",
+        "profileImageUrlLarge" : "/api/users/s9j2-nqmr/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/s9j2-nqmr/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/s9j2-nqmr/profile_images/TINY",
+        "screenName" : "Open Data NY - DOH",
+        "type" : "interactive",
+        "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+      },
+      "query" : { },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "s9j2-nqmr",
+        "displayName" : "Open Data NY - DOH",
+        "profileImageUrlLarge" : "/api/users/s9j2-nqmr/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/s9j2-nqmr/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/s9j2-nqmr/profile_images/TINY",
+        "screenName" : "Open Data NY - DOH",
+        "type" : "interactive",
+        "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+      },
+      "tags" : [ "covid-19", "covid", "sars-cov2", "novel coronavirus" ],
+      "flags" : [ "default", "ownerMayBeContacted", "restorable", "restorePossibleForType" ]
+    }
+  },
+  "data" : [ [ "row-je4f~3mv4-4hdh", "00000000-0000-0000-6F70-D45D2F0D8E76", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-01T00:00:00", "Albany", "0", "0", "0", "0" ]
+, [ "row-6rfj.zstg-ufwe", "00000000-0000-0000-A01B-51C87B08E45E", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-02T00:00:00", "Albany", "0", "0", "0", "0" ]
+, [ "row-qnsw~rjua-u3de", "00000000-0000-0000-65AC-7EA4CCDFAF7D", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-03T00:00:00", "Albany", "0", "0", "0", "0" ]
+, [ "row-jfgd.i5qg_hcxm", "00000000-0000-0000-D2AD-E6E86D0F0A21", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-04T00:00:00", "Albany", "0", "0", "0", "0" ]
+, [ "row-hkh9.yspv-8uni", "00000000-0000-0000-8C0D-925F4D5215D2", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-05T00:00:00", "Albany", "0", "0", "3", "3" ]
+, [ "row-iwx5-vcrz.eyw7", "00000000-0000-0000-81C9-94312B8F8FE3", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-06T00:00:00", "Albany", "0", "0", "0", "3" ]
+, [ "row-r8kj_m7gh_u2ty", "00000000-0000-0000-CF5E-FA8DA1428D91", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-07T00:00:00", "Albany", "0", "0", "5", "8" ]
+, [ "row-ir5i_zz67_ghgw", "00000000-0000-0000-638A-C5C7BA70EA0E", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-08T00:00:00", "Albany", "0", "0", "2", "10" ]
+, [ "row-riuf.v8zk.ys3h", "00000000-0000-0000-3AD2-B7BBACE2E686", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-09T00:00:00", "Albany", "0", "0", "3", "13" ]
+, [ "row-968p~riu4_qbn6", "00000000-0000-0000-303F-26263BF53E56", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-10T00:00:00", "Albany", "0", "0", "2", "15" ]
+, [ "row-fu6b_re3a_476m", "00000000-0000-0000-8045-830AF9E267E4", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-11T00:00:00", "Albany", "0", "0", "13", "28" ]
+, [ "row-8m92_iefz~riwt", "00000000-0000-0000-E205-F529CEF87130", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-12T00:00:00", "Albany", "1", "1", "11", "39" ]
+, [ "row-tjs4-692m-7iis", "00000000-0000-0000-3F17-1039054B2E74", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-13T00:00:00", "Albany", "2", "3", "26", "65" ]
+, [ "row-bb2v-p5mm-ghii", "00000000-0000-0000-4ADE-571F80530F86", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-14T00:00:00", "Albany", "3", "6", "108", "173" ]
+, [ "row-4cgh.p986-dfdk", "00000000-0000-0000-FA6B-FE6C4260C207", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-15T00:00:00", "Albany", "6", "12", "108", "281" ]
+, [ "row-5q6e-9g8u_xtz3", "00000000-0000-0000-C975-6D3A02D57412", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-16T00:00:00", "Albany", "11", "23", "140", "421" ]
+, [ "row-bcc6-mnd7~th8f", "00000000-0000-0000-4D6F-E2C2CB845F18", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-17T00:00:00", "Albany", "13", "36", "267", "688" ]
+, [ "row-y2e9.tkqp_ziwh", "00000000-0000-0000-12CE-174EA08D01D4", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-18T00:00:00", "Albany", "7", "43", "331", "1019" ]
+, [ "row-7vxa~tpks.b6wx", "00000000-0000-0000-308B-851C41939563", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-19T00:00:00", "Albany", "18", "61", "450", "1469" ]
+, [ "row-arr6~yssz_ffki", "00000000-0000-0000-A2BC-12D9FBCF0920", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-20T00:00:00", "Albany", "27", "88", "499", "1968" ]
+, [ "row-uacu_vxmx_rerx", "00000000-0000-0000-B9A5-387A7ED05D88", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-21T00:00:00", "Albany", "35", "123", "577", "2545" ]
+, [ "row-4uai_wevr-xf8z", "00000000-0000-0000-2447-F06971557BA9", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-22T00:00:00", "Albany", "4", "127", "197", "2742" ]
+, [ "row-ue8w_daad.65j7", "00000000-0000-0000-2DD8-BBC6A048416F", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-23T00:00:00", "Albany", "19", "146", "144", "2886" ]
+, [ "row-4s3f_5g64.qv2j", "00000000-0000-0000-29B2-D4CB89C93C2F", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-24T00:00:00", "Albany", "6", "152", "198", "3084" ]
+, [ "row-j3td-65i5.fdrb", "00000000-0000-0000-B6AC-AB205D4CDF37", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-25T00:00:00", "Albany", "19", "171", "93", "3177" ]
+, [ "row-yrzf-2tbt.4gzh", "00000000-0000-0000-3892-6ED25F20C434", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-26T00:00:00", "Albany", "16", "187", "112", "3289" ]
+, [ "row-sspw_aeur~z95b", "00000000-0000-0000-2D4C-63B6323EFA0D", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-27T00:00:00", "Albany", "8", "195", "101", "3390" ]
+, [ "row-2yxx.g3is~zkjz", "00000000-0000-0000-F460-5BE58FB7C741", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-28T00:00:00", "Albany", "10", "205", "73", "3463" ]
+, [ "row-egai.qkqn_i2sb", "00000000-0000-0000-3754-607EAC76275D", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-29T00:00:00", "Albany", "12", "217", "61", "3524" ]
+, [ "row-g5ic.z36e_t338", "00000000-0000-0000-D93A-CED992A96BBF", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-30T00:00:00", "Albany", "9", "226", "72", "3596" ]
+, [ "row-hu6y_28za_3pra", "00000000-0000-0000-A7FD-BD088DB7C3CC", 0, 1612209303, null, 1612209303, null, "{ }", "2020-03-31T00:00:00", "Albany", "14", "240", "108", "3704" ]
+, [ "row-arvt~xhq9.vjvm", "00000000-0000-0000-E7A3-2C53B4137327", 0, 1612209303, null, 1612209303, null, "{ }", "2020-04-01T00:00:00", "Albany", "13", "253", "106", "3810" ]
+, [ "row-7p57~43xu-iawf", "00000000-0000-0000-ADE6-5C0E299408E0", 0, 1612209303, null, 1612209303, null, "{ }", "2020-04-02T00:00:00", "Albany", "14", "267", "105", "3915" ]
+, [ "row-g3zt~m5m2~6s8p", "00000000-0000-0000-D47D-781078958D97", 0, 1612209303, null, 1612209303, null, "{ }", "2020-04-03T00:00:00", "Albany", "26", "293", "123", "4038" ]
+, [ "row-9ave.kx24~84d5", "00000000-0000-0000-6BE5-64910DB1634D", 0, 1612209303, null, 1612209303, null, "{ }", "2020-04-04T00:00:00", "Albany", "12", "305", "117", "4155" ]
+, [ "row-tjxf~h6pb-pm3w", "00000000-0000-0000-B3A1-5D6B44E4468B", 0, 1612209303, null, 1612209303, null, "{ }", "2020-04-05T00:00:00", "Albany", "14", "319", "89", "4244" ]
+, [ "row-vmpf_jvyp_mckx", "00000000-0000-0000-44F7-872AE0066EFE", 0, 1612209303, null, 1612209303, null, "{ }", "2020-04-06T00:00:00", "Albany", "14", "333", "86", "4330" ]
+, [ "row-h6fk~p59h-64w4", "00000000-0000-0000-8576-DE39004C5D76", 0, 1612209303, null, 1612209303, null, "{ }", "2020-04-07T00:00:00", "Albany", "9", "342", "74", "4404" ]
+, [ "row-s5xz~3v87_dash", "00000000-0000-0000-826E-305C1FA8729A", 0, 1612209303, null, 1612209303, null, "{ }", "2020-04-08T00:00:00", "Albany", "37", "379", "229", "4633" ]
+, [ "row-gk5c_f254.2rsa", "00000000-0000-0000-BAED-1348887DBA8F", 0, 1612209303, null, 1612209303, null, "{ }", "2020-04-09T00:00:00", "Albany", "47", "426", "332", "4965" ]
+, [ "row-gxiq_wywi_yndu", "00000000-0000-0000-C702-7245B383BB8F", 0, 1612209303, null, 1612209303, null, "{ }", "2020-04-10T00:00:00", "Albany", "20", "446", "159", "5124" ]
+, [ "row-297t_yexe.2zqj", "00000000-0000-0000-3E70-97B42709C0ED", 0, 1612209303, null, 1612209303, null, "{ }", "2020-04-11T00:00:00", "Albany", "32", "478", "223", "5347" ]
+, [ "row-vv4j.xyzx-he4h", "00000000-0000-0000-E460-1173DDA3B8BC", 0, 1612209303, null, 1612209303, null, "{ }", "2020-04-12T00:00:00", "Albany", "21", "499", "193", "5540" ]
+, [ "row-29xh_6vi9_34e3", "00000000-0000-0000-B41A-D175246375A3", 0, 1612209303, null, 1612209303, null, "{ }", "2020-04-13T00:00:00", "Albany", "36", "535", "216", "5756" ]
+, [ "row-bgpw~pcnt-xz3j", "00000000-0000-0000-6078-766DF1EC1667", 0, 1612209303, null, 1612209303, null, "{ }", "2020-04-14T00:00:00", "Albany", "13", "548", "106", "5862" ]
+, [ "row-ae2d~5bza~gw6d", "00000000-0000-0000-DC62-4F538428EF5C", 0, 1612209303, null, 1612209303, null, "{ }", "2020-04-15T00:00:00", "Albany", "33", "581", "301", "6163" ]
+, [ "row-kjag-keyw_qjy7", "00000000-0000-0000-0A4A-956235901782", 0, 1612209303, null, 1612209303, null, "{ }", "2020-04-16T00:00:00", "Albany", "38", "619", "273", "6436" ]
+, [ "row-hqwb~rfrs-jt4k", "00000000-0000-0000-A76E-E852253481AB", 0, 1612209303, null, 1612209303, null, "{ }", "2020-04-17T00:00:00", "Albany", "29", "648", "291", "6727" ]
+, [ "row-qawf-nz94_wdmf", "00000000-0000-0000-D359-0E459D189063", 0, 1612209303, null, 1612209303, null, "{ }", "2020-04-18T00:00:00", "Albany", "34", "682", "305", "7032" ]
+, [ "row-z4sh_9ctc.zfmq", "00000000-0000-0000-4582-06ACEEAB011E", 0, 1612209303, null, 1612209303, null, "{ }", "2020-04-19T00:00:00", "Albany", "5", "687", "103", "7135" ]
+, [ "row-bgdr.9h4x-qf43", "00000000-0000-0000-9437-D92C85F3EDE4", 0, 1612209303, null, 1612209303, null, "{ }", "2020-04-20T00:00:00", "Albany", "17", "704", "164", "7299" ]
+, [ "row-7ijr.uvyw_qgan", "00000000-0000-0000-1DB8-433A471ECD33", 0, 1612209303, null, 1612209303, null, "{ }", "2020-04-21T00:00:00", "Albany", "35", "738", "236", "7535" ]
+, [ "row-wtr2.622x-jtk5", "00000000-0000-0000-30F8-92F52B598E0F", 0, 1612209303, null, 1612209303, null, "{ }", "2020-04-22T00:00:00", "Albany", "21", "758", "178", "7713" ]
+  ]
+}
