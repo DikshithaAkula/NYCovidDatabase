@@ -1,7 +1,7 @@
 # NYCovidDatabase
 NY state Covid Test Data ETL
 
--> Once the main.py is started, it hits the api provided by the NY state and extracts the data provided in the website.
+-> On running  the main.py file, it hits the api provided by the NY state and extracts the data provided in the website.
 
 -> The data in the website contains the COVID testing data of all the counties of the NY state in JSON format.
 
