@@ -1,0 +1,3 @@
+2021-02-07 23:28:10.136991 - Could not load record into table : albany where Testdate = 2020-04-18; Error -invalid literal for int() with base 10: 'dsas'
+2021-02-07 23:28:10.169013 - Could not load record into table : albany where Testdate = 2020-04-20; Error -invalid literal for int() with base 10: 'abc'
+2021-02-07 23:28:10.193156 - Could not load record into table : albany where Testdate = 2020-04-22; Error -invalid literal for int() with base 10: 'cds'
