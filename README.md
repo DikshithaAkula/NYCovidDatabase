@@ -11,6 +11,12 @@ NY state Covid Test Data ETL
 
 -> 62 Tables are created, loaded and updated in the database for the 62 counties in NY state.
 
+-> The program checks if the table is already created, else creates a new table
+
+-> Next the program either inserts the record into the table or updates the already present record. While updating it checks if there are any changes in the matching record. If there are no changes in the record, it simply skips to the next record. This way we are updating the loaddate of the new/updated records only.
+
+-> An errorLogFile_datetime.txt is created whenever an error is thrown while inserting or updating records. All the other errors are added to this file. The program does not stop execution when errors are thrown.
+
 -> Comments are provided in the main.py file along with the code.
 
 Source data url - https://health.data.ny.gov/api/views/xdss-u53e/rows.json?accessType=DOWNLOAD
