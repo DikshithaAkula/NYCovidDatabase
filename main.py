@@ -89,12 +89,13 @@ class MyThread(threading.Thread):                                               
 
 
 if __name__ == "__main__":
-    '''url = "https://health.data.ny.gov/api/views/xdss-u53e/rows.json?accessType=DOWNLOAD"
+    url = "https://health.data.ny.gov/api/views/xdss-u53e/rows.json?accessType=DOWNLOAD"
     #response = requests.get(url)                    # used to fetch data from the url. Returns response object
     data = json.loads(requests.get(url).text)       # converts the json string format to a python dictionary
 
     for row in data['data']:
         MyThread(row[9], row[8][:10], row[1], row[10], row[11], row[12], row[13]).start()           # .start() method starts the thread by calling the run method.
+
     '''
     # Testing the job and database
     with open("egenSol.json", 'r') as f:
@@ -110,3 +111,4 @@ if __name__ == "__main__":
     for i in cursor.fetchall():
         print(i)
     db.close()
+    '''
