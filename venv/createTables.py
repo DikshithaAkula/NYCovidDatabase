@@ -5,11 +5,16 @@ def createTable(county):
     try:
         db = sqlite3.connect('NewYorkCovidDatabase.db')
         cursor = db.cursor()
-        cursor.execute("CREATE TABLE IF NOT EXISTS {} (id CHAR(36) PRIMARY KEY, testDate TEXT, newPositives INTEGER, cummulativeNumberOfPositives INTEGER, totalNumberOfTestsPerformed INTEGER, cummulativeNumberOfTestsPerformed INTEGER, loadDate DATE)".format(county))
-        #print("CREATE TABLE IF NOT EXISTS {} (id CHAR(36) PRIMARY KEY, testDate TEXT, newPositives INTEGER, cummulativeNumberOfPositives INTEGER, totalNumberOfTestsPerformed INTEGER, cummulativeNumberOfTestsPerformed INTEGER, loadDate DATE)".format(county))
+        cursor.execute('''CREATE TABLE IF NOT EXISTS {} (
+                            testDate TEXT PRIMARY KEY, 
+                            id CHAR(36) NOT NULL, 
+                            newPositives INTEGER DEFAULT 0, 
+                            cummulativeNumberOfPositives INTEGER DEFAULT 0, 
+                            totalNumberOfTestsPerformed INTEGER DEFAULT 0, 
+                            cummulativeNumberOfTestsPerformed INTEGER DEFAULT 0, 
+                            loadDate TEXT DEFAULT '2020-03-01 00:00:00')'''.format(self.county))
     except Exception as E:
         return E
-    else:
-        return "executed"
     finally:
-        cursor.close()
+        db.commit()
+        db.close()

@@ -1,0 +1,2 @@
+1612751874 - Could not load record into table : albany where Testdate = 2020-04-19; Error - Value Error 
+1612751874 - Could not load record into table : albany where Testdate = 2020-04-21; Error - Value Error 
