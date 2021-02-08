@@ -98,7 +98,7 @@ if __name__ == "__main__":
 
     '''
     # Testing the job and database
-    with open("egenSol.json", 'r') as f:
+    with open("testData1.json", 'r') as f:
         data = json.load(f)
         f.close()
 
