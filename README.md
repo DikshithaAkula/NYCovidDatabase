@@ -11,4 +11,6 @@ NY state Covid Test Data ETL
 
 -> 62 Tables are created, loaded and updated in the database for the 62 counties in NY state.
 
+-> Comments are provided in the main.py file along with the code.
+
 Source data url - https://health.data.ny.gov/api/views/xdss-u53e/rows.json?accessType=DOWNLOAD
